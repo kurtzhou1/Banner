@@ -1,0 +1,38 @@
+.banner {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner.closed {
+  height: 80px;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.banner.opened {
+  height: 300px;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.btn {
+  font-size: 13px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background-color: black;
+  color: #a3a3a3;
+  padding: 4px 4px 4px 10px;
+  border-radius: 3px 0px 0px 0px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: none;
+}
+/*# sourceMappingURL=banner.css.map */

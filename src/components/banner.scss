@@ -1,0 +1,114 @@
+.banner {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  &.closed {
+    height: 80px;
+    .btn::after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin: 2px;
+      border-style: solid;
+      border-width: 3px 3px 0;
+      border-color: #a3a3a3 transparent transparent;
+    }
+  }
+  &.opened {
+    height: 300px;
+    .btn::after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin: 2px;
+      border-style: solid;
+      border-width: 0 3px 3px;
+      border-color: transparent transparent #a3a3a3;
+    }
+  }
+  &.closing {
+    height: 80px;
+    .btn::after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin: 2px;
+      border-style: solid;
+      border-width: 3px 3px 0;
+      border-color: #a3a3a3 transparent transparent;
+    }
+  }
+  &.opening {
+    height: 300px;
+    .btn::after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin: 2px;
+      border-style: solid;
+      border-width: 0 3px 3px;
+      border-color: transparent transparent #a3a3a3;
+    }
+  }
+}
+
+.btn {
+  font-size: 13px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background-color: black;
+  color: #a3a3a3;
+  padding: 4px 4px 4px 10px;
+  border-radius: 3px 0px 0px 0px;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  z-index: 1;
+}
+
+.closed .img {
+  position: absolute;
+  transition: all 0s;
+  transform: translateY(-300px);
+}
+
+// .closed .img{
+//     position: absolute;
+//     transform: translateY(-300px);
+//   }
+
+// .closed{
+//     font-size: 13px;
+//     position: absolute;
+//     right: 0px;
+//     bottom: 0px;
+//     background-color:black;
+//     color:  #a3a3a3;
+//     padding: 4px 4px 4px 10px;
+//     border-radius: 3px 0px 0px 0px;
+//     cursor: pointer;
+//     user-select: none;
+//
+// }
+
+// .opp{
+//     font-size: 13px;
+//     left: 0px;
+//     bottom: 0px;
+//     background-color:yellow;
+//     color:  pink;
+//     padding: 4px 4px 4px 10px;
+//     border-radius: 0px 0px 0px 0px;
+//     cursor: pointer;
+//     user-select: none;
+//     border:none;
+// }
