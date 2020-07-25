@@ -15,10 +15,10 @@ class APP extends React.Component {
   render() {
     const props = {
       // 設定一開始是否為開或合
-      openAtStart: false, // [boolean] true | false
+      openAtStart: true, // [boolean] true | false
       // 設定啟動後是否要自動開或合，若設為false，就不要自勳開合；若為true是馬上自動開合；若為數字是幾毫秒之後開合
-      autoToggle: 10000,
-      transition: false,
+      autoToggle: 5000,
+      transition: true,
       // 當有transition時，要執行的callback 
       classs: {
         closed: "closed", // [string]
@@ -33,10 +33,10 @@ class APP extends React.Component {
       },
     };
     return (
-      <React.Fragment>
+      <>
         {/* <Banner {...props} ref={this.bannerRef} /> */}
         <Banner2 {...props} ref={this.bannerRef} />
-      </React.Fragment>
+      </>
     );
   }
 }
